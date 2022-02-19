@@ -8,11 +8,12 @@ public class Basics {
 		// TODO Auto-generated method stub
 		int[] newArray = new int[10];
 		for (int i = 0; i < 10; i++) {
-			newArray[i] = 0 + (int) (Math.random() * 10);
+			newArray[i] = -5000 + (int) (Math.random() * 10000);
 		}
+		Sorter sorter = new Sorter();
 		printArray(newArray);
 		findMaxMinAverage(newArray);
-		bubleSort(newArray);
+		sorter.bubleSort(newArray);
 		printArray(newArray);
 		findSimpleNumber(newArray);
 	}
@@ -39,18 +40,7 @@ public class Basics {
 		System.out.format("Max:%d Min:%d Average:%f\n", max, min, average);
 	}
 	
-	public static int[] bubleSort(int[] arrayToSort) {
-		for (int i = 0; i < arrayToSort.length - 1; i++) {
-			for (int j = 0; j < arrayToSort.length - 1; j++) {
-				if (arrayToSort[j + 1] < arrayToSort[j]) {
-					int temp = arrayToSort[j];
-					arrayToSort[j] = arrayToSort[j + 1];
-					arrayToSort[j + 1] = temp;
-				}
-			}
-		}
-		return arrayToSort;
-	}
+	
 	
 	public static void findSimpleNumber(int[] arrayToFind) {
 		Set<Integer> setSimpleNumber = new HashSet<Integer>();
@@ -58,7 +48,6 @@ public class Basics {
 			boolean flagSimple = true;
 			for (int j = 2; j < Math.abs(i); j++) {
 				if (i % j == 0) {
-					System.out.println(i + " " + j);
 					flagSimple = false;
 					break;
 				}
