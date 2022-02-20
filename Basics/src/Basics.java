@@ -11,11 +11,14 @@ public class Basics {
 			newArray[i] = -5000 + (int) (Math.random() * 10000);
 		}
 		Sorter sorter = new Sorter();
-		printArray(newArray);
-		findMaxMinAverage(newArray);
-		sorter.bubleSort(newArray);
-		printArray(newArray);
-		findSimpleNumber(newArray);
+//		printArray(newArray);
+//		findMaxMinAverage(newArray);
+//		sorter.bubleSort(newArray);
+//		printArray(newArray);
+//		findSimpleNumber(newArray);
+		int[] testArray = {14, 61, 85, 24, 74, 26, 17, 50, 40, 45, 21, 32, 59, 58, 13};
+		sorter.heapSort(testArray);
+		printArray(testArray);
 	}
 	
 	public static void printArray(int[] arrayToPrint) {
