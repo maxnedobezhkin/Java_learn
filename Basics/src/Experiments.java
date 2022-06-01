@@ -11,6 +11,9 @@ public class Experiments {
 		
 		myDog.setAge(2);
 		System.out.println(myDog.getAge());
+		
+		Animal myAnimal = new Dog();
+		myAnimal.voice();
 	}
 
 }
