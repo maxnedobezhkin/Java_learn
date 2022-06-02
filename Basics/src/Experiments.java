@@ -14,6 +14,12 @@ public class Experiments {
 		
 		Animal myAnimal = new Dog();
 		myAnimal.voice();
+		
+		Animal myAnotherAnimal = new Animal();
+		myAnotherAnimal.getName();
+		myDog.getName();
+		myCat.getName();
+		
 	}
 
 }
