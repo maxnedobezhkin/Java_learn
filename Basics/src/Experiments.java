@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Experiments {
 
@@ -19,6 +20,16 @@ public class Experiments {
 		myAnotherAnimal.getName();
 		myDog.getName();
 		myCat.getName();
+		
+		ArrayList<TestInterface> listOfInterface = new ArrayList<>();
+		listOfInterface.add(myDog);
+		listOfInterface.add(myCat);
+		listOfInterface.add(myAnimal);
+		listOfInterface.add(myAnotherAnimal);
+		System.out.println("-----");
+		for (TestInterface e : listOfInterface) {
+			e.getName();
+		}
 		
 	}
 
