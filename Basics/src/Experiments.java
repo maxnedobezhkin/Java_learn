@@ -4,6 +4,19 @@ public class Experiments {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		experiment();
+		
+		InterfaceForLambda interfaceForLambda;
+		interfaceForLambda = (x, y) -> {
+			int z = x + y;
+			return z * z;
+			};
+		
+		System.out.println(interfaceForLambda.calculate(5, 3));
+	}
+	
+	public static void experiment() {
 		Dog myDog = new Dog();
 		myDog.voice();
 		
@@ -30,7 +43,6 @@ public class Experiments {
 		for (TestInterface e : listOfInterface) {
 			e.getName();
 		}
-		
 	}
 
 }
