@@ -1,5 +1,5 @@
 package packageforgenerics;
 
-public class NewGeneric {
+public class NewGeneric<T> {
 	
 }
