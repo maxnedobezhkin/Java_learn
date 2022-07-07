@@ -19,6 +19,10 @@ public class Main {
 		addSomeone(animalList);
 		
 		Cat cat = new LittleCat();
+		
+		Integer a = 2; 
+		changeVariable(a);
+		System.out.println("Значение a: " + a);
 	}
 	
 	public static void getVoice(ArrayList<? extends Animal> animals) {
@@ -35,6 +39,10 @@ public class Main {
 		int a = 1;
 		int b = 0;
 		return a / b;
+	}
+	
+	public static void changeVariable(Integer a) {
+		a = 3;
 	}
 
 }
